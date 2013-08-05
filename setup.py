@@ -14,4 +14,5 @@ setup(
     install_requires=('Django>=1.3,<1.5',),
     packages=find_packages(),
     include_package_data=True,
+    setup_requires = ['s3sourceuploader', ],
 )
