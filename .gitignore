@@ -34,3 +34,4 @@ pytest-results.xml
 .mr.developer.cfg
 .project
 .pydevproject
+*.pyo
