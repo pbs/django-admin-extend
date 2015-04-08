@@ -49,15 +49,17 @@ def add_bidirectional_m2m(form_cls):
             Returns ``instance``.
             """
             instance = super(BidirectionalM2MForm, self).save(commit=False)
-            force_save = self.instance.pk is None
-            if force_save:
-                instance.save()
-            for m2m_field, related_manager in self._get_bidirectional_m2m_fields():
-                setattr(self.instance, related_manager, self.cleaned_data[m2m_field])
-            if commit:
-                if not force_save:
+            if not hasattr(self,'_save_flag'):
+                self._save_flag=True
+                force_save = self.instance.pk is None
+                if force_save:
                     instance.save()
-                self.save_m2m()
+                for m2m_field, related_manager in self._get_bidirectional_m2m_fields():
+                    setattr(self.instance, related_manager, self.cleaned_data[m2m_field])
+                if commit:
+                    if not force_save:
+                        instance.save()
+                    self.save_m2m()
             return instance
 
     return BidirectionalM2MForm
