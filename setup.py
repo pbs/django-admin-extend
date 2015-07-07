@@ -11,8 +11,7 @@ setup(
     author='Ioan Alexandru Cucu',
     author_email='alexandruioan.cucu@gmail.com',
     url='https://github.com/kux/django-admin-extend',
-    install_requires=('Django>=1.3,<1.5',),
+    install_requires=["Django>=1.7,<1.8", ],
     packages=find_packages(),
     include_package_data=True,
-    setup_requires = ['s3sourceuploader', ],
 )
