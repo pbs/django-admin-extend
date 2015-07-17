@@ -1,6 +1,15 @@
 CHANGELOG
 =========
 
+Revision 286eb32 (17.07.2015, 09:22 UTC)
+----------------------------------------
+
+No new issues.
+
+* Misc commits
+
+  * Django 1.7 upgrade; s3sourceuploader no longer required
+
 Revision 81314f3 (09.04.2015, 07:11 UTC)
 ----------------------------------------
 
