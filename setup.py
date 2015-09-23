@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-admin-extend',
-    version='0.0.2.pbs.3',
+    version='0.0.2.pbs.4',
     description=('Provides functionality for extending'
                  'ModelAdmin classes that have already'
                  'been registered by other apps'),
