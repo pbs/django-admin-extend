@@ -1,6 +1,15 @@
 CHANGELOG
 =========
 
+Revision 10ab19c (23.09.2015, 15:08 UTC)
+----------------------------------------
+
+No new issues.
+
+* Misc commits
+
+  * added support for django 1.8 version
+
 Revision 286eb32 (17.07.2015, 09:22 UTC)
 ----------------------------------------
 
